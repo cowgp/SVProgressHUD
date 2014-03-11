@@ -41,22 +41,6 @@ CGFloat SVProgressHUDRingThickness = 6;
 
 @property (nonatomic, readonly) CGFloat visibleKeyboardHeight;
 
-- (void)showProgress:(float)progress
-              status:(NSString*)string
-            maskType:(SVProgressHUDMaskType)hudMaskType;
-
-- (void)showImage:(UIImage*)image
-           status:(NSString*)status
-         duration:(NSTimeInterval)duration;
-
-- (void)dismiss;
-
-- (void)setStatus:(NSString*)string;
-- (void)registerNotifications;
-- (void)moveToPoint:(CGPoint)newCenter rotateAngle:(CGFloat)angle;
-- (void)positionHUD:(NSNotification*)notification;
-- (NSTimeInterval)displayDurationForString:(NSString*)string;
-
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < 50000
 - (UIColor *)hudBackgroundColor;
 - (UIColor *)hudForegroundColor;
